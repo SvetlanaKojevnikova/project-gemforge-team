@@ -1,0 +1,14 @@
+.section {
+  background-color: rgb(243, 241, 241);
+  padding: 30px 0;
+  &__search {
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+  }
+  &__employee {
+    padding: 0;
+  }
+}
