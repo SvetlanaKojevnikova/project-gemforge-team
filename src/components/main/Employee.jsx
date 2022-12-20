@@ -1,6 +1,6 @@
 function Employee(props) {
   const {
-    avatar,
+    image,
     firstName,
     lastName,
     jobTitle,
@@ -11,7 +11,7 @@ function Employee(props) {
   } = props;
   return (
     <div className="section__employee">
-      <div>{avatar}</div>
+      <div>{image}</div>
       <div className="section__employee-name">
         {lastName} {firstName}
       </div>

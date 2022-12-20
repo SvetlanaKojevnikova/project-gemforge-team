@@ -26,6 +26,7 @@ const Main = () => {
                 .map((item, id) => (
                   <div key={item.id}>
                     <Employee
+                      image={item.image}
                       firstName={item.firstName}
                       lastName={item.lastName}
                       jobTitle={item.jobTitle}
