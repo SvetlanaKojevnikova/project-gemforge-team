@@ -1,40 +1,18 @@
-import { BsPeople } from "react-icons/bs";
-import { RiSuitcase3Line } from "react-icons/ri";
-import { useNavigate } from "react-router-dom";
+import Button from "../button/Button";
 
-const Button = () => {
-  const navigate = useNavigate();
-
+const Buttons = ({ buttons }) => {
   return (
     <div className="buttons">
-      <button
-        type="button"
-        className="btn"
-        onClick={() => navigate("/employee")}
-      >
-        <BsPeople className="btn-icon" />
-        Сотрудники
-      </button>
-
-      <button
-        type="button"
-        className="btn"
-        onClick={() => navigate("/holidays")}
-      >
-        <RiSuitcase3Line className="btn-icon" />
-        Отпуска
-      </button>
-
-      <button
-        type="button"
-        className="btn"
-        onClick={() => navigate("/candidates")}
-      >
-        <BsPeople className="btn-icon" />
-        Кандидаты
-      </button>
+      {buttons.map((button, id) => (
+        <Button
+          key={button.id}
+          icon={button.icon}
+          title={button.title}
+          path={button.path}
+        />
+      ))}
     </div>
   );
 };
 
-export default Button;
+export default Buttons;

@@ -1,4 +1,5 @@
 import Buttons from "./Buttons";
+import buttons from "../../data/buttons";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
               Команда
             </h2>
             <div className="header__header__btns">
-              <Buttons />
+              <Buttons buttons={buttons} />
             </div>
           </div>
           <div className="header__header__right">
